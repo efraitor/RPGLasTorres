@@ -27,9 +27,18 @@ public class PlayerController : MonoBehaviour
         //Movemos al personaje usando la velocidad de su RigidBody, obteniendo los Inputs de los ejes de movimiento
         theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
 
+
         //ANIMACIONES
         anim.SetFloat("moveX", theRB.velocity.x);
         anim.SetFloat("moveY", theRB.velocity.y);
+
+        //Si hemos pulsado cualquiera de los botones de dirección
+        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        {
+            //Metemos como última posición en X e Y el último input realizado
+            anim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+            anim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+        }
     }
 
 }
