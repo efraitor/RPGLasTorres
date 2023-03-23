@@ -10,14 +10,14 @@ public class PlayerController : MonoBehaviour
     //Nombre del área a la que vamos
     public string areaTransitionName;
 
+    //Temporizador sin Input
+    public float noMoveLength;
+    private float noMoveCount;
+
     //Referencia al RigidBody del jugador
     private Rigidbody2D theRB;
     //Referencia al Animator del jugador
     public Animator anim;
-
-    //Temporizador sin Input
-    public float noMoveLength;
-    private float noMoveCount;
 
     //Hacemos una referencia (Singleton) 
     public static PlayerController instance;
@@ -48,12 +48,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Si el contador de tiempo sin Input está vacío
         if(noMoveCount <= 0)
         {
             //Movemos al personaje usando la velocidad de su RigidBody, obteniendo los Inputs de los ejes de movimiento
             theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
             
-
             //Si hemos pulsado cualquiera de los botones de dirección
             if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
             {
@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
                 anim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
             }
         }
+        //Si el contador aún está lleno
         else
             noMoveCount -= Time.deltaTime;
 
@@ -75,6 +76,7 @@ public class PlayerController : MonoBehaviour
     {
         //Inicializamos el contador de no Input
         noMoveCount = noMoveLength;
+        //Paramos al jugador
         theRB.velocity = Vector2.zero;
     }
 }

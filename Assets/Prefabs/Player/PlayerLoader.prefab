@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4844767583151255252, guid: fb98db01f672cd84a954dc9e1bcd03ec, type: 3}
+  initialPos: {x: 0, y: 0, z: 0}
