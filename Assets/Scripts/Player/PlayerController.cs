@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
     //Velocidad de movimiento del jugador
     public float moveSpeed;
 
+    //Nombre del área a la que vamos
+    public string areaTransitionName;
+
     //Referencia al RigidBody del jugador
     private Rigidbody2D theRB;
     //Referencia al Animator del jugador
