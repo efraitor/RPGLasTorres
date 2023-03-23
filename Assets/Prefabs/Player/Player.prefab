@@ -138,6 +138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  areaTransitionName: 
+  anim: {fileID: 0}
+  noMoveLength: 1
 --- !u!95 &4844767583151255258
 Animator:
   serializedVersion: 4

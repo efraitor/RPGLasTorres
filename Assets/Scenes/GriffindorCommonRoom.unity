@@ -269,6 +269,10 @@ PrefabInstance:
       value: EntranceArea (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6833167674295542688, guid: e2eeeff8491a3fc42ab5b10b8cfe7e2a, type: 3}
+      propertyPath: dirX
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833167674295542688, guid: e2eeeff8491a3fc42ab5b10b8cfe7e2a, type: 3}
       propertyPath: transitionName
       value: GriffindorCommonRoom-2
       objectReference: {fileID: 0}
@@ -382,6 +386,10 @@ PrefabInstance:
       value: EntranceArea
       objectReference: {fileID: 0}
     - target: {fileID: 6833167674295542688, guid: e2eeeff8491a3fc42ab5b10b8cfe7e2a, type: 3}
+      propertyPath: dirY
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833167674295542688, guid: e2eeeff8491a3fc42ab5b10b8cfe7e2a, type: 3}
       propertyPath: transitionName
       value: GriffindorCommonRoom-1
       objectReference: {fileID: 0}
@@ -458,6 +466,10 @@ PrefabInstance:
     - target: {fileID: 4844767583151255252, guid: fb98db01f672cd84a954dc9e1bcd03ec, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844767583151255252, guid: fb98db01f672cd84a954dc9e1bcd03ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4844767583151255254, guid: fb98db01f672cd84a954dc9e1bcd03ec, type: 3}
       propertyPath: m_RootOrder

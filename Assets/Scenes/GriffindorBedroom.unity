@@ -428,6 +428,10 @@ PrefabInstance:
       value: EntranceArea
       objectReference: {fileID: 0}
     - target: {fileID: 6833167674295542688, guid: e2eeeff8491a3fc42ab5b10b8cfe7e2a, type: 3}
+      propertyPath: dirY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833167674295542688, guid: e2eeeff8491a3fc42ab5b10b8cfe7e2a, type: 3}
       propertyPath: transitionName
       value: GriffindorBedroom-1
       objectReference: {fileID: 0}

@@ -127,7 +127,7 @@ TextureImporter:
         width: 296
         height: 311
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -135,6 +135,69 @@ TextureImporter:
       bones: []
       spriteID: dbfdce7791aa4a94687b5a11e5dab5b2
       internalID: -1876171376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7thFloor_1
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 176
+        width: 230
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4c3a69e5774be449052df5d1ab5a70
+      internalID: 293307900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7thFloor_2
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 169
+        width: 255
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393bb63c0b597fe459a341aded13875b
+      internalID: -1256146200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7thFloor_3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3
+        width: 161
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c4d63746d33b0448a23355a5faf552
+      internalID: 20344671
       vertices: []
       indices: 
       edges: []
@@ -150,7 +213,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      7thFloor_1: 293307900
+      7thFloor_3: 20344671
       7thFloor_0: -1876171376
+      7thFloor_2: -1256146200
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
