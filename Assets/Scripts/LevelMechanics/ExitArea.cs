@@ -11,10 +11,12 @@ public class ExitArea : MonoBehaviour
     //El nombre del área de la escena a la que vamos a ir
     public string areaTransitionName;
 
+    //public AreaEntrance theEntrance;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //theEntrance.transitionName = areaTransitionName;
     }
 
     // Update is called once per frame

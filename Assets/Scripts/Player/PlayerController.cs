@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         if(noMoveCount <= 0)
         {
             //Movemos al personaje usando la velocidad de su RigidBody, obteniendo los Inputs de los ejes de movimiento
-            theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+            theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * moveSpeed;
             
             //Si hemos pulsado cualquiera de los botones de dirección
             if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //Método para inicializar el contador
-    public void InitialiceNoInput()
+    public void InitializeNoInput()
     {
         //Inicializamos el contador de no Input
         noMoveCount = noMoveLength;

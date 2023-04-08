@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 953588591514673062, guid: e2eeeff8491a3fc42ab5b10b8cfe7e2a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.48
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 953588591514673062, guid: e2eeeff8491a3fc42ab5b10b8cfe7e2a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -420,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2067137305}
   m_Layer: 0
-  m_Name: Entrance/ExistAreas
+  m_Name: Entrance/ExitAreas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

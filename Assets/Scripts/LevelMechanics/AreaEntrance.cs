@@ -22,13 +22,7 @@ public class AreaEntrance : MonoBehaviour
             PlayerController.instance.anim.SetFloat("lastMoveX", dirX);
             PlayerController.instance.anim.SetFloat("lastMoveY", dirY);
             //Iniciamos el tiempo de no Input del jugador
-            PlayerController.instance.InitialiceNoInput();
+            PlayerController.instance.InitializeNoInput();
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
